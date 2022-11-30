@@ -15,9 +15,15 @@ https://www.youtube.com/watch?v=dQw4w9WgXcQ
 
 Isn't it great!?
 `
+function remarkFoo() {
+  return (tree, file) => {
+    console.log("foo");
+  };
+}
 
 async function go() {
   const result = await remark()
+    .use(remarkFoo)
     .use(remarkEmbedder, {
       transformers: [oembedTransformer],
     })
