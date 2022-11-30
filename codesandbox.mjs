@@ -1,7 +1,7 @@
 import remarkEmbedder from '@remark-embedder/core'
 // or, if you're using CJS:
 // const {default: remarkEmbedder} = require('@remark-embedder/core')
-import remark from 'remark'
+import {remark} from 'remark'
 import html from 'remark-html'
 
 const CodeSandboxTransformer = {
